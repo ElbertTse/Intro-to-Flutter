@@ -33,7 +33,7 @@ class Demo extends StatelessWidget {
     return MaterialApp(
         
         // This is the wrapper for our entire app.
-
+        debugShowCheckedModeBanner: false, // This disables the debug banner in the top right corner.
         theme: ThemeData.dark(), // Since we like darkmode on everything.
         title: "Demo App", // Need a title for our app
         home: SafeArea(

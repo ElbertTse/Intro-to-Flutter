@@ -25,9 +25,10 @@ flutter:
   assets:
 
     #This doesnt have to be called assets but it is for now.
-    - assets # This is where we will put our images.
+    - images/ # This is where we will put our images.
 
   # This is how we define fonts and link them from the fonts folder.
   fonts:
-    -family: Montserrat
-      - asset :  fonts/Montserrat-Medium.ttf
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Medium.ttf

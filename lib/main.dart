@@ -52,7 +52,55 @@ class Demo extends StatelessWidget {
 
               // Just using this widget to center our elements.
               child: Column(
+                children: [
+                  
+                  Expanded(
+                    child:
+                      // This is how we show images. Use an image widget which is a wrapper widget and has a property called image. Thats where we use AssetImage.
+                      // We are also providing a with value for image. Resizing an image will preserve the aspect ratio of the image.
+                      Image(
+                        image: AssetImage("images/dub.jpg"),
+                        //width: 256.0,
+                      ),
+                  ),
 
+                  Expanded(
+
+                    // Here is a text widget for our name.
+                    child: Text(
+                      "Bossman Dub",
+
+                      // Stylizing the text widget is done using a text style object. Here, we define a font family and font size.
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 32.0,
+                      ),
+                    ),
+                  ),
+
+                  Expanded(
+                    
+                    // Here is a text widget for our title.
+                    child:  Text(
+                      "Dub Man",
+
+                      // Here, we stylize with a smaller font size and font color.
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.amberAccent
+                      ),
+                    ),
+                  ),
+
+                  Expanded(
+                    child: Card(
+                      child: ListTile(
+
+                        title: Text('www.bigdubbossman.com'),
+                      ),
+                    ),
+                  ),
+                ],
                 // Column has a children property and will display them vertically.
               ),
             ),

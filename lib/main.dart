@@ -56,7 +56,8 @@ class Demo extends StatelessWidget {
 
                 CircleAvatar(
                   backgroundImage: AssetImage(
-                      'images/dub.jpg'), // This is how we display the image.
+                      'images/dub.jpg'
+                  ), // This is how we display the image.
 
                   radius: 128,
                 ),
@@ -97,6 +98,8 @@ class Demo extends StatelessWidget {
 
                 // This is one of the rare instances where we don't use an expanded widget.
                 // Its mostly because we don't need it for so few items.
+
+                // The card widget is also like a wrapper widget and the content goes in the list title widget
                 Card(
                   margin: EdgeInsets.symmetric(
                     vertical: 20,
